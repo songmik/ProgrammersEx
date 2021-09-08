@@ -16,18 +16,6 @@ def solution(board, moves):
             if basket[len(basket)-1] == basket[len(basket)-2]: # 길이가 2이상일 때
                 basket.pop(-1) # 인형 제거 1개
                 basket.pop(-1) # 인형 제거 1개
-                answer += 1 # 인형 2개가 사라졌으니 answer에 1을 더해줌
+                answer += 2 # 인형 2개가 사라졌으니 answer에 2를 더해줌
 
-    return answer*2 # 사라진 인형의 개수 *2개를 반환
-
-
-
-
-
-
-
-
-
-
-
-    return answer
+    return answer 
