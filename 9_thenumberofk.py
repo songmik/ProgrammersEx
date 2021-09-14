@@ -16,4 +16,4 @@ def solution(array, commands):
     return list(map(lambda x:sorted(array[x[0]-1:x[1]])[x[2]-1], commands))
 
 # lambda : 함수를 한 줄로 만들어주는 함수 ( 사용법 -> lambda 인자 : 표현식 )
-# 참고 https://wikidocs.net/64
+# 참고 https://wikidocs.net/64 
