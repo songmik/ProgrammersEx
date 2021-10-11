@@ -27,3 +27,15 @@ def solution(nums):
             answer += 1
     return answer
 
+
+# 소수 찾기 https://programmers.co.kr/learn/courses/30/lessons/12921
+
+import math
+
+def solution(n):
+    for i in range(2, int(math.sqrt(n))+1):
+        if n % i == 0:
+            return False
+    return True
+
+
