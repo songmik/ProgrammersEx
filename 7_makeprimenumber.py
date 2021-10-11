@@ -30,12 +30,13 @@ def solution(nums):
 
 # 소수 찾기 https://programmers.co.kr/learn/courses/30/lessons/12921
 
-import math
-
 def solution(n):
-    for i in range(2, int(math.sqrt(n))+1):
-        if n % i == 0:
-            return False
-    return True
+    num=set(range(2, n+1))
+    for i in range(2, n+1):
+        if i in num:
+            num-=set(range(i*2, n+1, i))
+    return len(num)
 
+# 에라토스테네스의 체 : 범위에서 합성수를 지우는 방식으로 소수를 찾는 방법
+# 참고 : https://wikidocs.net/21638
 
