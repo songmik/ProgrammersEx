@@ -8,16 +8,13 @@
 
 
 # 방법 : 리스트 컴프리헨션, Counter 객체 사용
-from typing import Collection
-
-
 def solution(self, paragraph: str, banned: List[str]) -> str:
     # \w = 단어 문자, ^ = not 을 의미 => 모든 문자를 공백으로 치환
     # words에는 소문자, 구두점, bannded를 제외한 단어 목록이 저장됨
     words = [word for word in re.sub(r'[^\w]',' ', paragraph).lower().split() if word not in banned]
 
     # 가장 많이 등장하는 단어를 셈
-    counts = Collection.Counter(words)
+    counts = collections.Counter(words)
 
     # words에서 가장 흔하게 등장하는 단어의 첫 번째 값을 most_common(1)으로 추출=> [('ball', 2)] 에서 [0][0]인 'ball'이 가장 흔한 단어가 된다.
     return counts.most_commoon(1)[0][0]
