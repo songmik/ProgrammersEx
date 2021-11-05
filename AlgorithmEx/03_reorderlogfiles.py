@@ -10,7 +10,8 @@
 #         츨력 = ["let1 art can", "let3 art zero", "let2 own kit dig","dig1 8 1 5 1","dig2 3 6"]
 
 
-# 방법 1. 람다와 + 연산자를 이용한 방법
+
+# 방법 : 람다와 + 연산자를 이용한 방법
 def solution(self, logs:List[str]) -> List[str]:
     letters, digits =[], [] # (1). 문자로 변환 가능한 로그 -> letters, 숫자로 변환 가능한 로그 -> digits
     for log in logs:
