@@ -10,6 +10,7 @@
 #                 ]
 
 
+
 # 방법 : 정렬하여 딕셔너리에 추가하는 방법
 def solution(self, strs: List[str]) -> List[List[str]]:
     # 존재하지 않는 키를 삽입하려할 경우 KeyError가 발생하므로 에러가 나지 않도록 디폴트를 생성해주는 defaultdict()로 선언
