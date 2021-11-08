@@ -1,4 +1,4 @@
-# 두 수의 합
+# 7. 두 수의 합(★)
 
 # **덧셈하여 타겟을 만들 수 있는 배열의 두 숫자 인덱스를 리턴하라.
 
@@ -44,7 +44,7 @@ def solution(self, nums: List[str], target: int) -> List[int]:
         if target -num in nums_map:
             return [nums_map[target - num], i]
         nums_map[num] = i
-        
+
 
 # 방법 5. 투 포인터 이용
 def solution(self, nums: List[str], target: int) -> List[int]:
