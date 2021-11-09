@@ -21,6 +21,7 @@ def solution(self, strs: List[str]) -> List[List[str]]:
         anagrams[''.join(sorted(word))].append(word)
     return list(anagrams.values())
 
+
 """ &&& sort()와 sorted()의 차이점 &&&
 
 1. sort() : 매서드를 사용해 리스트의 요소를 작은 순서대로 정렬(오름차순) -> 원래 변수가 수정되는 것
