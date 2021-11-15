@@ -9,7 +9,7 @@
 
 # 방법1. 리스트 변환 (팰린드롬 여부를 판별하기 위해서는 앞,뒤로 모두 추출할 수 있는 자료구조가 필요)
 def solution(self,head: ListNode) -> bool:
-    q: List =[]
+    q: List =[] 
 
     if not head:
         return True
@@ -30,7 +30,7 @@ def solution(self,head: ListNode) -> bool:
  연결 리스트
     - 데이터 요소의 선형 집합으로, 대표적인 선형 자료구조 중 하나로 다양한 추상 자료형 구현의 기반이 됨
     - 장점 : 새로운 노드를 삽입하거나 삭제하기가 간편
-
+    - Node : 데이터와 다음 데이터를 가리키는 주소로 이루어짐
 
 """
 
@@ -54,6 +54,12 @@ def solution(self, head: ListNode) -> bool:
     
     return True
 
+"""
+ 데크 : 앞과 뒤에서 데이터를 처리할 수 있는 양방향 자료형으로 스택처럼 써도 되고 큐처럼 써도 된다
+  - collections.deque 모듈은 자료형을 생성하는 모듈
+  - 참고 : https://wikidocs.net/104977
+
+"""
 
 # 방법 3. 런너를 이용한 우아한 풀이
 def solution(self, head: ListNode) -> bool:
@@ -70,3 +76,8 @@ def solution(self, head: ListNode) -> bool:
     while rev and rev.val == slow.val:
         slow, rev = slow.next, rev.next
     return not rev
+
+"""
+ 런너 : 연결 리스트 순회 시 2개의 포인터를 동시에 사용하는 기법
+ 
+"""
