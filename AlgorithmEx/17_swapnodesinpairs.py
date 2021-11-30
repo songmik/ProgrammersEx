@@ -5,6 +5,7 @@
 # 예제 : 입력 = 1->2->3->4 , 출력 = 2->1->4->3
 
 
+
 # 방법 1. 값만 교환
 def solution(self, head:ListNode) -> ListNode:
     cur = head
