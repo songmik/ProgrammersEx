@@ -23,8 +23,9 @@ def solution(self, s:str) -> str:
 
     for char in s:
         counter[char] -=1
-        if char in seen:
+        if char in seen: # 이미 처리된 문자 여부를 확인하기 위해 사용
             continue
+        
         # 뒤에 붙일 문자가 남아 있다면 스택에서 제거
         while stack and char < stack[-1] and counter[stack[-1]] > 0:
             seen.remove(stack.pop())
