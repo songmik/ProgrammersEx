@@ -9,7 +9,7 @@
 # 방법 : 스택 값 비교
 def solution(self, T:List[int]) -> List[int]:
     answer =[0] * len(T)
-    stack =[]
+    stack =[] 
     for i, cur in enumerate(T):
         # 현재 온도가 스택 값보다 높다면 정답 처리
         while stack and cur > T[stack[-1]]:
