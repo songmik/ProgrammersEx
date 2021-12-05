@@ -1,4 +1,4 @@
-# 23. 큐르르 이용한 스택 구현
+# 23. 큐를 이용한 스택 구현
 
 # ** 큐를 이용해 다음 연산을 지원하는 스택을 구현하라.
 
@@ -22,13 +22,13 @@
 # 방법 : push() 할 때 큐를 이용해 재정렬
 class Mystack:
     def __init__(self) :
-        self.q = collections.deque()
+        self.q = collections.deque() # 큐를 데크로 선언
 
     def push(self, x):
         self.q.append(x)
         #  요소 삽입 후 맨 앞에 두는 상태로 재정렬
         for _ in range(len(self.q)-1):
-            self.q.append(self.q.popleft())
+            self.q.append(self.q.popleft()) # 맨 앞 요소를 끄집어낼 때 스택처럼 가장 먼저 삽입한 요소가 나오게 됌
 
     def pop(self):
         return self.q.popleft()
