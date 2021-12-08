@@ -11,3 +11,35 @@
 
 
 """
+
+# 거북이 그래픽으로 도형 그리기
+import turtle as t
+
+# 삼각형
+t.color("red")
+t.forward(100)
+t.left(120) # 왼쪽으로 120도 회전
+t.forward(100)
+t.left(120)
+t.forward(100)
+t.left(120)
+
+# 사각형
+t.color("green")
+t.pensize(3) # 펜 굵기
+t.forward(100)
+t.left(90)
+t.forward(100)
+t.left(90)
+t.forward(100)
+t.left(90)
+t.forward(100)
+t.left(90)
+
+# 원
+t.color("blue")
+t.pensize(5)
+t.circle(50) # 반지름이 50인 원
+
+
+
