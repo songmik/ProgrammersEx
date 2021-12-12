@@ -2,6 +2,9 @@
 
 # ** 주어진 숫자 n개 중 가장 큰 숫자를 찾는 알고리즘을 만들어 보세요.
 
+
+
+# 방법
 def find(a):
     n = len(a)
     max_n = a[0] # 리스트의 첫 번째 값을 최대값으로 기억함
@@ -12,7 +15,7 @@ def find(a):
         return max_n
 
 
-
+# 반복
 def find(a):
     n = len(a)
     max = a[0]
