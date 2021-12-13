@@ -11,6 +11,7 @@ def sum(n):
         s = s + i
     return s
 
+
 # 방법 2
 def sum(n):
     return n*(n+1) // 2 # // : 정수의 나눗셈
