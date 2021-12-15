@@ -4,14 +4,14 @@
 
 
 
-# 방법 -> 재귀 호출 : 원반 1개일 때가 종료 조건
+# 방법 -> 재귀 호출 : 원반 1개일 때가 종료 조건임
 def hanoi(n, start, end, middle):
     if n==1:
         print(start, "->", end)
         return
     # 원반 n-1개를 middle로 이동
-    hanoi(n-1, start, middle, end) # end를 보조기둥으로
+    hanoi(n-1, start, middle, end) # end를 보조기둥으로 사용
     print(start, "->", end)
 
-    # middle_pos에 있는 원반 n-1개를 목적지로 이동
-    hanoi(n-1, middle, end, start) # start를 보조 기둥으로 
+    # middle에 있는 원반 n-1개를 목적지(start)로 이동
+    hanoi(n-1, middle, end, start) # start를 보조 기둥으로 사용
