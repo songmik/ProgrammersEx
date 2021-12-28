@@ -1,6 +1,7 @@
 # Chapter 03. 그리디
 
 
+
 # 3-1 . 거스름돈 
 n = 1260
 count = 0 # 초기화
@@ -10,6 +11,7 @@ type = [500,100,50,10]
 for coin in type:
     count += n//coin
     n %= coin
+
 
 
 # 3-2 
@@ -30,6 +32,7 @@ result += (m-count) * second # 가장 작은 수 더하기
 print(result)
 
 
+
 # 3-3. minn() 함수를 이용하는 답안 예시
 n, m = map(int, input().split())
 result = 0
@@ -40,6 +43,7 @@ for i in range(n):
     result = max(result, min_value) # '가장 작은 수'들 중에서 가장 큰 수 찾기
 
 print(result)
+
 
 
 # 3-4. 2중 반복문 구조를 이용하는 답안 예시
@@ -54,6 +58,7 @@ for i in range(n):
     result = max(result, min_value)
 
 print(result)
+
 
 
 # 3-5
@@ -72,6 +77,7 @@ while n> 1:
     result += 1
 
 print(result)
+
 
 
 # 3-6
