@@ -66,7 +66,6 @@ for step in steps:
 print(result)
 
 
-
 # 4-4. 게임 개발
 n, m = map(int, input().split())
 
