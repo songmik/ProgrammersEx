@@ -130,3 +130,17 @@ def dfs(graph, v, visited):
 
             visited = [False] * 9
             dfs(graph, 1, visited)
+
+
+
+# 5-9. BFS
+from collections import deque
+def bfs(graph, start, visited):
+    queue = deque([start])
+    visited[start] = True # 현재 노드를 방문 처리
+    while queue: # 큐가 빌 때까지 반복
+        v = queue.popleft()
+        for i in graph[v]:
+            if not visited[i]:
+                queue.append(i)
+                visited[i] = True
